@@ -58,5 +58,5 @@ dump.rdb
 *.iml
 
 .vscode
-
+**/.env
 **.dec**

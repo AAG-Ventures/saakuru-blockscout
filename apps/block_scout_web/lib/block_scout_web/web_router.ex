@@ -491,7 +491,7 @@ defmodule BlockScoutWeb.WebRouter do
 
     get("/search-verified-contracts", VerifiedContractsController, :search_verified_contracts)
 
-    get("/csv-export", CsvExportController, :index)
+    # get("/csv-export", CsvExportController, :index)
 
     get("/transactions-csv", AddressTransactionController, :transactions_csv)
 

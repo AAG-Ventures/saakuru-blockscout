@@ -5,6 +5,15 @@
   }
   window.onload = ShowLayoutContainer()
 </script>
+
+<section class="container" style="display:block">
+  <div class="row mb-5" style="display: flex; justify-content: center; align-items: center;">
+    <div class="col-xs-12" id="bannerSlot">
+
+    </div>
+  </div>
+</section>
+
 <section class="container" data-page="transaction-list">
   <%= render BlockScoutWeb.Advertisement.TextAdView, "index.html", conn: @conn %>
   <div class="card">

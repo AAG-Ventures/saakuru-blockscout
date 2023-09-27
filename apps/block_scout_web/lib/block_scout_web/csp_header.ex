@@ -17,12 +17,15 @@ defmodule BlockScoutWeb.CSPHeader do
     trustwallet_url = "https://raw.githubusercontent.com/trustwallet/assets/"
     walletconnect_urls = "wss://*.bridge.walletconnect.org https://registry.walletconnect.org/data/wallets.json"
     json_rpc_url = Application.get_env(:block_scout_web, :json_rpc)
-
+    poa_url = "https://*.poa.network"
+    hypelab_url = "https://api.hypelab.com"
+    cloudfront_url = "https://*.cloudfront.net"
+    cdn_jsdelivr = "https://cdn.jsdelivr.net"
     Controller.put_secure_browser_headers(conn, %{
       "content-security-policy" => "\
-        connect-src 'self' #{json_rpc_url} #{config[:mixpanel_url]} #{config[:amplitude_url]} #{websocket_endpoints(conn)} #{czilladx_url} #{trustwallet_url} #{walletconnect_urls} #{google_tag_manager_url};\
+        connect-src 'self' #{json_rpc_url} #{config[:mixpanel_url]} #{config[:amplitude_url]} #{websocket_endpoints(conn)} #{czilladx_url} #{trustwallet_url} #{walletconnect_urls} #{google_tag_manager_url} #{poa_url} #{cloudfront_url} #{hypelab_url};\
         default-src 'self';\
-        script-src 'self' 'unsafe-inline' 'unsafe-eval' #{coinzillatag_url} #{google_url} https://www.gstatic.com #{google_tag_manager_url};\
+        script-src 'self' 'unsafe-inline' 'unsafe-eval' #{coinzillatag_url} #{google_url} https://www.gstatic.com #{google_tag_manager_url} #{cdn_jsdelivr};\
         style-src 'self' 'unsafe-inline' 'unsafe-eval' https://fonts.googleapis.com #{google_tag_manager_url};\
         img-src 'self' * data:;\
         media-src 'self' * data:;\

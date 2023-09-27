@@ -174,5 +174,17 @@
       <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/dropzone.js") %>"></script>
     <% end %>
     <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/app_extra.js") %>"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/gohypelab/hypelab-vanilla@v0.4.2/index.js"></script>
+    <script>
+      let client = new HypeLab.Client({
+        URL: 'https://api.hypelab.com', /* Production URL */
+        propertySlug: 'saakuru',
+        //environment: Environment.Development,
+        environment: HypeLab.Environment.Production /* Production Environment */
+      });
+      HypeLab.setClient(client);
+      HypeLab.banner({ placement: '09ea78f89d', container: 'bannerSlot' });
+    </script>
   </body>
 </html>

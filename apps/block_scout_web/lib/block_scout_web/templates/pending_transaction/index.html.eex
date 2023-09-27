@@ -1,3 +1,11 @@
+<section class="container" style="display:block">
+  <div class="row mb-5" style="display: flex; justify-content: center; align-items: center;">
+    <div class="col-xs-12" id="bannerSlot">
+
+    </div>
+  </div>
+</section>
+
 <section class="container" data-page="transaction-pending-list">
   <%= render BlockScoutWeb.Advertisement.TextAdView, "index.html", conn: @conn %>
   <div class="card">
@@ -7,7 +15,7 @@
       <div class="list-top-pagination-container-wrapper">
         <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "top", cur_page_number: "1", show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
       </div>
- 
+
       <div data-selector="channel-batching-message" style="display: none;">
         <div data-selector="reload-button" class="alert alert-info">
           <a href="#" class="alert-link"><span data-selector="channel-batching-count"></span> <%= gettext "More transactions have come in" %></a>
