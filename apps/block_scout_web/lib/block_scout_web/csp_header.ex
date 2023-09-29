@@ -18,7 +18,7 @@ defmodule BlockScoutWeb.CSPHeader do
     walletconnect_urls = "wss://*.bridge.walletconnect.org https://registry.walletconnect.org/data/wallets.json"
     json_rpc_url = Application.get_env(:block_scout_web, :json_rpc)
     poa_url = "https://*.poa.network"
-    hypelab_url = "https://api.hypelab.com"
+    hypelab_url = "https://api.hypelab.com https://b.ixncdn.com/ https://a.ixncdn.com/ https://ixncdn.com/i"
     cloudfront_url = "https://*.cloudfront.net"
     cdn_jsdelivr = "https://cdn.jsdelivr.net"
     Controller.put_secure_browser_headers(conn, %{
