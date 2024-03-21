@@ -91,7 +91,8 @@ defmodule BlockScoutWeb.WebRouter do
     pipe_through([:browser, BlockScoutWeb.Plug.AllowIframe])
 
     resources("/", ChainController, only: [:show], singleton: true, as: :chain)
-
+    resources("/explorer", ChainController, only: [:show], singleton: true)
+    # resources("/explorer", ExplorerController, only: [:show], singleton: true)
     resources("/market-history-chart", Chain.MarketHistoryChartController,
       only: [:show],
       singleton: true
