@@ -40,5 +40,5 @@
       </div>
     </div>
   </section>
-  <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/token-counters.js") %>"></script>
+  <script defer data-cfasync="false" src="<%= static_path(@conn, "/explorerjs/token-counters.js") %>"></script>
 </section>

@@ -47,5 +47,5 @@
       </div>
     </div>
   </div>
-  <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/delete-item-handler.js") %>"></script>
+  <script defer data-cfasync="false" src="<%= static_path(@conn, "/explorerjs/delete-item-handler.js") %>"></script>
 </section>

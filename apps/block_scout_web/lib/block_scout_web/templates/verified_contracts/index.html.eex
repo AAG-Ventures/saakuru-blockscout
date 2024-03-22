@@ -42,7 +42,7 @@
           ) %>
         </div>
       </div>
-      
+
       <div class="search-input-container mb-3">
         <input data-search-field="" class="form-control search-input" type="text" name="search" value="<%= @conn.params["search"] %>" placeholder="<%= gettext "Contract name or address" %>" id="search-text-input">
       </div>
@@ -103,5 +103,5 @@
 
       <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "bottom", cur_page_number: @page_number, show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
     </div>
-  <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/verified-contracts.js") %>"></script>
+  <script defer data-cfasync="false" src="<%= static_path(@conn, "/explorerjs/verified-contracts.js") %>"></script>
 </section>

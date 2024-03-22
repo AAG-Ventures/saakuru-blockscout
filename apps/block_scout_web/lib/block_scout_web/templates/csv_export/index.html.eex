@@ -3,7 +3,7 @@
             render BlockScoutWeb.CommonComponentsView, "_modal_status.html", status: status
           end
         %>
-<link rel="stylesheet" href="<%= static_path(@conn, "/css/export-csv.css") %>">
+<link rel="stylesheet" href="<%= static_path(@conn, "/explorercss/export-csv.css") %>">
 <section class="container">
   <div class="card">
     <div class="card-body">
@@ -80,5 +80,5 @@
   </script>
   <script src="https://www.google.com/recaptcha/enterprise.js?onload=onloadCallback&render=explicit" async defer>
   </script>
-  <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/csv-download.js") %>"></script>
+  <script defer data-cfasync="false" src="<%= static_path(@conn, "/explorerjs/csv-download.js") %>"></script>
 </section>

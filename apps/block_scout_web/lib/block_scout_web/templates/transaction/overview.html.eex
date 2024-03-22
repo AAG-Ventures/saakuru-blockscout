@@ -534,7 +534,7 @@
       </div>
     </div>
   <% end %>
-  <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/transaction.js") %>"></script>
+  <script defer data-cfasync="false" src="<%= static_path(@conn, "/explorerjs/transaction.js") %>"></script>
 </section>
 
 <section class="container" style="display:block">

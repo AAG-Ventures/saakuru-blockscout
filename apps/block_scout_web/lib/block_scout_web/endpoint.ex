@@ -15,7 +15,7 @@ defmodule BlockScoutWeb.Endpoint do
   # when deploying your static files in production.
   plug(
     Plug.Static,
-    at: "/",
+    at: "/explorer/",
     from: :block_scout_web,
     gzip: true,
     only: ~w(

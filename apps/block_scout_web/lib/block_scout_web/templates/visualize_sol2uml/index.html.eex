@@ -32,5 +32,5 @@
             </div>
         </div>
     </div>
-    <script defer data-cfasync="false" src="<%= static_path(@conn, "/js/sol2uml.js") %>"></script>
+    <script defer data-cfasync="false" src="<%= static_path(@conn, "/explorerjs/sol2uml.js") %>"></script>
 </section>
