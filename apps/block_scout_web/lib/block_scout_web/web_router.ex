@@ -94,6 +94,8 @@ defmodule BlockScoutWeb.WebRouter do
   scope "/explorer", BlockScoutWeb do
     pipe_through(:explorer)
 
+    resources("/", ChainController, only: [:show], singleton: true)
+
     resources("/accounts", AddressController, only: [:index])
 
     resources("/market-history-chart", Chain.MarketHistoryChartController,
