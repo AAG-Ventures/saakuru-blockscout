@@ -1,7 +1,7 @@
 <section class="container error-container">
   <div class="tx-nf">
     <div class="tx-nf-illustr">
-      <img alt="Transaction not found" src="/images/errors-img/tx-not-found.svg">
+      <img alt="Transaction not found" src="/explorer/images/errors-img/tx-not-found.svg">
     </div>
     <h1 class="card-title error-title"><%= gettext("Sorry, we are unable to locate this transaction hash") %></h1>
     <div class="tx-nf-block">

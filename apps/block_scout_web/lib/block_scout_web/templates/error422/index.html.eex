@@ -1,7 +1,7 @@
 <section class="container error-container">
   <div class="block-not-found">
     <div class="block-not-found-img">
-      <img alt="Request cannot be processed" src="/images/errors-img/unprocessable-entity.svg">
+      <img alt="Request cannot be processed" src="/explorer/images/errors-img/unprocessable-entity.svg">
     </div>
     <div class="block-not-found-content">
       <h1 class="card-title error-title"><%= gettext "Request cannot be processed" %></h1>

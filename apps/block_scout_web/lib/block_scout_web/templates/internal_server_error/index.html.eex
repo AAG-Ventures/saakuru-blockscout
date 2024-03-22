@@ -1,7 +1,7 @@
 <section class="container error-container">
   <div class="block-not-found">
     <div class="block-not-found-img">
-      <img alt="Internal server error" src="/images/errors-img/internal-server-error.svg">
+      <img alt="Internal server error" src="/explorer/images/errors-img/internal-server-error.svg">
     </div>
     <div class="block-not-found-content">
       <h1 class="card-title error-title"><%= gettext "Internal server error" %></h1>

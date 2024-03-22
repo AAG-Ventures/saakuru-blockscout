@@ -1,7 +1,7 @@
 <section class="container error-container">
   <div class="block-not-found">
     <div class="block-not-found-img">
-      <img alt="Page not found" src="/images/errors-img/page-not-found.svg">
+      <img alt="Page not found" src="/explorer/images/errors-img/page-not-found.svg">
     </div>
     <div class="block-not-found-content">
       <h1 class="card-title error-title"><%= gettext "Page not found" %></h1>

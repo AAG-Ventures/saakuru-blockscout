@@ -10,7 +10,7 @@ defmodule BlockScoutWeb.Tokens.Instance.OverviewView do
   import BlockScoutWeb.NFTHelper, only: [external_url: 1]
 
   @tabs ["token-transfers", "metadata"]
-  @stub_image "/images/controller.svg"
+  @stub_image "/explorer/images/controller.svg"
 
   def token_name?(%Token{name: nil}), do: false
   def token_name?(%Token{name: _}), do: true
