@@ -70,7 +70,7 @@
 
       </div>
     </div>
-    <script defer data-cfasync="false" src="<%= static_path(@conn, "/explorerjs/address-token-transfers.js") %>"></script>
-    <script defer data-cfasync="false" src="<%= static_path(@conn, "/explorerjs/token-transfers-toggle.js") %>"></script>
+    <script defer data-cfasync="false" src="<%= static_path(@conn, "/explorer/js/address-token-transfers.js") %>"></script>
+    <script defer data-cfasync="false" src="<%= static_path(@conn, "/explorer/js/token-transfers-toggle.js") %>"></script>
   </section>
 </section>

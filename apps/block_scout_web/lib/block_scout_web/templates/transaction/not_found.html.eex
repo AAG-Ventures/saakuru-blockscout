@@ -12,5 +12,5 @@
     </div>
     <a class="error-btn btn-line" href="/"><%= gettext("Back to home") %></a>
   </div>
-  <script defer data-cfasync="false" src="<%= static_path(@conn, "/explorerjs/transaction.js") %>"></script>
+  <script defer data-cfasync="false" src="<%= static_path(@conn, "/explorer/js/transaction.js") %>"></script>
 </section>

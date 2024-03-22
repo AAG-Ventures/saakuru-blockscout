@@ -52,5 +52,5 @@
       </div>
     <% end %>
   </div>
-  <script defer data-cfasync="false" src="<%= static_path(@conn, "/explorerjs/smart-contract-helpers.js") %>"></script>
+  <script defer data-cfasync="false" src="<%= static_path(@conn, "/explorer/js/smart-contract-helpers.js") %>"></script>
 </section>

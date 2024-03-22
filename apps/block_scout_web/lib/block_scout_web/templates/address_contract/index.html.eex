@@ -257,5 +257,5 @@
       <% end %>
     </div>
   </div>
-  <script defer data-cfasync="false" src="<%= static_path(@conn, "/explorerjs/address.js") %>"></script>
+  <script defer data-cfasync="false" src="<%= static_path(@conn, "/explorer/js/address.js") %>"></script>
 </section>

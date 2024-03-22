@@ -103,5 +103,5 @@
 
       <%= render BlockScoutWeb.CommonComponentsView, "_pagination_container.html", position: "bottom", cur_page_number: @page_number, show_pagination_limit: true, data_next_page_button: true, data_prev_page_button: true %>
     </div>
-  <script defer data-cfasync="false" src="<%= static_path(@conn, "/explorerjs/verified-contracts.js") %>"></script>
+  <script defer data-cfasync="false" src="<%= static_path(@conn, "/explorer/js/verified-contracts.js") %>"></script>
 </section>

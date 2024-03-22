@@ -61,4 +61,4 @@
       <% end %>
     </div>
 </section>
-<script defer data-cfasync="false" src="<%= static_path(@conn, "/explorerjs/app.js") %>"></script>
+<script defer data-cfasync="false" src="<%= static_path(@conn, "/explorer/js/app.js") %>"></script>

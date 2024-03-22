@@ -29,5 +29,5 @@
 
     </div>
   </div>
-  <script defer data-cfasync="false" src="<%= static_path(@conn, "/explorerjs/blocks.js") %>"></script>
+  <script defer data-cfasync="false" src="<%= static_path(@conn, "/explorer/js/blocks.js") %>"></script>
 </section>

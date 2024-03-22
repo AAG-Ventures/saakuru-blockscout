@@ -67,6 +67,6 @@
 
       </div>
     </div>
-    <script defer data-cfasync="false" src="<%= static_path(@conn, "/explorerjs/address-transactions.js") %>"></script>
+    <script defer data-cfasync="false" src="<%= static_path(@conn, "/explorer/js/address-transactions.js") %>"></script>
   </section>
 </section>
