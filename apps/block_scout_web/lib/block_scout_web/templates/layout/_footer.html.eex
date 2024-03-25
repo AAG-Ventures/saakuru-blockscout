@@ -38,7 +38,7 @@
         <ul>
           <li><a href="https://app.saakuru.com" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Get Saakuru All-in-One Crypto App") %></a></li>
           <%= render BlockScoutWeb.LayoutView, "_add_chain_to_mm.html" %>
-          <li><a href="https://saakuru.network" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Saakuru Website") %></a></li>
+          <li><a href="https://saakuru.com" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Saakuru Website") %></a></li>
           <li><a href="http://oasys.games" rel="noreferrer" class="footer-link" target="_blank"><%= gettext("Oasys Website") %></a></li>
         </ul>
       </div>
