@@ -7,7 +7,7 @@ if (websocketRootUrl.endsWith('/')) {
   websocketRootUrl = websocketRootUrl.slice(0, -1)
 }
 
-const socket = new Socket(websocketRootUrl + '/socket', { params: { locale } })
+const socket = new Socket('wss://explorer-testnet.saakuru.network' + '/socket', { params: { locale } })
 socket.connect()
 
 export default socket

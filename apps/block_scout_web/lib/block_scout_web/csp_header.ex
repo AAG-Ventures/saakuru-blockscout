@@ -37,6 +37,6 @@ defmodule BlockScoutWeb.CSPHeader do
 
   defp websocket_endpoints(conn) do
     host = Conn.get_req_header(conn, "host")
-    "ws://#{host} wss://#{host}"
+    "ws://#{host} wss://#{host} ws://explorer-testnet.saakuru.network wss://explorer-testnet.saakuru.network ws://explorer.saakuru.network wss://explorer.saakuru.network"
   end
 end
